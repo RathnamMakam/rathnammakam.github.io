@@ -12,6 +12,11 @@
     margin: 0;
 }
 
+#header p#name {
+    float: left;
+    margin: 120px;
+}
+
 #header h1#logo a {
     background: url(../images/mypic.png) no-repeat top left;
     width: 120px;
@@ -29,7 +34,7 @@
     width: 100%;
 }
 
-#header #menu {float:right;padding:80px 80px 0 0;}
+#header #menu {float:right;padding:60px 80px 0 0;}
 
 #container {padding:150px 20px 20px 20px;}
 
