@@ -5,5 +5,6 @@ angular.module('mywebsite', ['ngRoute']).
             when('/home', {templateUrl: 'partials/home.html'}).
             when('/certifications', {templateUrl: 'partials/certifications.html'}).
             when('/contactme', {templateUrl: 'partials/contactme.html'}).
+            when('/articles', {templateUrl: 'partials/articles.html'}).
             otherwise({redirectTo: '/home'});
     });
