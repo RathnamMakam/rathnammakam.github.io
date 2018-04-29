@@ -48,8 +48,8 @@
 #footer {
     height: 50px;
     background: #fff;
-    position: center;
-	bottom: 0;
+    position: absolute;
+	bottom: 10px;
 	float: left;
     width: 100%;
 }
