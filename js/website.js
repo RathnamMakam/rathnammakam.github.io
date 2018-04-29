@@ -1,9 +1,9 @@
-angular.module('website', ['ngRoute']).
+angular.module('mywebsite', ['ngRoute']).
     config(function ($routeProvider) {
         $routeProvider.
             when('/about', {templateUrl: 'partials/about.html', controller: 'AboutCtrl'}).
-            when('/experiments', {templateUrl: 'partials/experiments.html', controller: 'ExperimentsCtrl'}).
-            when('/home', {templateUrl: 'partials/home.html', controller: 'HomeCtrl'}).
+            when('/certifications', {templateUrl: 'partials/certifications.html', controller: 'CertificationsCtrl'}).
+            when('/contactme', {templateUrl: 'partials/contactme.html', controller: 'ContactMeCtrl'}).
             otherwise({redirectTo: '/home'});
     })
     .controller('AboutCtrl', function ($scope, StateService) {
@@ -16,7 +16,7 @@ angular.module('website', ['ngRoute']).
             StateService.setMessage(m);
         };
     })
-    .controller('ExperimentsCtrl', function ($scope, StateService, ExperimentsService) {
+    .controller('CertificationsCtrl', function ($scope, StateService, ExperimentsService) {
         $scope.title = 'Experiments Page';
         $scope.body = 'This is the about experiments body';
 
@@ -27,7 +27,7 @@ angular.module('website', ['ngRoute']).
             StateService.setMessage(m);
         };
     })
-    .controller('HomeCtrl', function ($scope, StateService) {
+    .controller('ContactMeCtrl', function ($scope, StateService) {
         $scope.title = 'Home Page';
         $scope.body = 'This is the about home body';
 
