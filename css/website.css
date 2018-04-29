@@ -45,6 +45,15 @@
     width: 100%;
 }
 
+#footer {
+    height: 50px;
+    background: #fff;
+    position: center;
+    header: 0;
+    left: 0;
+    width: 100%;
+}
+
 .experiment {
     cursor: pointer;
     outline: 1px lightgray solid;
