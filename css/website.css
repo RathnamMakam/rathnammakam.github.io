@@ -58,7 +58,7 @@
     display: block;
     height: 4px;
     position: absolute;
-    top: 100%;
+    bottom: 15px;
     width: 100%;
 }
 
